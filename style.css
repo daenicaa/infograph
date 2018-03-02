@@ -1,0 +1,192 @@
+.instructions-page{
+  color: #222;  
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Mukta Vaani';
+}
+
+.instructions-page p{
+  margin: 0;
+  padding: 1em 0;
+}
+
+.instructions-page .text-center{
+    text-align: center;
+}
+
+
+.instructions-page a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.instructions-page ol li strong{
+    display: block;
+}
+
+.instructions-page__options{
+  margin: 5em auto;
+}
+
+.instructions-page__option{
+  position: relative;
+  max-width: 550px;
+  min-height: 100px;
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+}
+
+.instructions-page__step--num{
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructions-page__option--icon{
+  width: 100px;
+  height: 100px;
+  background: #222;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: -50px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructions-page__option--icon img{
+    width: 100%;
+}
+
+.instructions-page__option--txt{
+  color: #FFF;
+  width: 100%;
+  padding: 8px 8px 8px 60px;
+  background: #DA2140;
+  border-radius: 8px;
+}
+
+.instructions-page__option--txt h2{
+  font-size: larger;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+}
+
+.instructions-page__option--txt .btn{
+  text-decoration: none;
+  color: #FFF;
+  font-size: small;
+  padding: 8px 16px;
+  margin: 4px 0;
+  background: #7DBC53;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 9s;
+}
+
+.instructions-page__option.right .instructions-page__option--icon{
+  left: auto;
+  right: -50px;
+}
+
+.instructions-page__option.right .instructions-page__option--txt{
+  padding:  8px 60px 8px 8px;
+  text-align: right;
+  background: #338EC7;
+}
+
+.instructions-page .hidden{
+  display: none;
+}
+
+.instructions-page .shape-separator {
+  position: relative;
+  height: 48px;
+}
+.instructions-page .shape-separator::after {
+  content: '';
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCI+PHBhdGggZD0iTTEyIDEybDEyIDEySDBsMTItMTJ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+}
+
+.instructions-page .shape-separator--parent{
+  background: #00A8FB;
+}
+
+
+.instructions-page .shape-separator--parent.bottom .shape-separator::after{
+  transform: scaleY(-1);
+  top: 0;
+}
+
+.instructions-page .blue{
+  background: #00A8FB;
+  padding: 0 20px;
+}
+
+.instructions-page .blue a{
+    color: #fff;
+}
+.instructions-page__tab--content{
+  display:flex;
+}
+
+.instructions-page__step{
+  width:50%; 
+}
+
+.instructions-page__step:nth-child(odd){
+  text-align:right;
+  padding-right: 2em;
+    justify-content: flex-end;
+}
+
+.instructions-page__step:nth-child(even){
+    justify-content: flex-start;
+  padding-left: 2em;
+}
+
+.instructions-page__step{
+  position: relative;
+  margin-bottom: 60px;
+      display: flex;
+    align-items: center;
+}
+
+.instructions-page__step:nth-child(1){
+    border-right: 2px dashed #222;
+}
+
+.instructions-page__step .paw{
+    font-size: 40px;
+    line-height: 40px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: -47px;
+  right: -20px;
+}
+
+
+.instructions-page__step.icon>div:not(.paw){
+    width: 100px;
+    height: 100px;
+}
+
+.instructions-page__step.icon>div img{
+    width: 100%;
+}
