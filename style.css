@@ -15,18 +15,60 @@
     text-align: center;
 }
 
+.instructions-page .red-label{
+    color: red;
+    margin: 1em 0;
+    font-size: 1.2em;
+}
 
 .instructions-page a{
     text-decoration: underline;
     cursor: pointer;
 }
 
+.instructions-page ol li{
+  padding-left: 1em;
+}
+
 .instructions-page ol li strong{
     display: block;
 }
 
+
+.instructions-page h3{
+      margin: 1em 0 0;
+}
+
+
+.instructions-page__head h1{
+    color: #7DBC53;
+        font-weight: 400;
+    line-height: 1em;
+    font-size: 2em;
+        margin-left: -1em;
+}
+
+.instructions-page__head h1 small{
+  color: #1D5FB8;
+  display: block;
+    font-size: .55em;
+        margin-left: 1em;
+}
+
+
+.insturctions-logo{
+  text-align: center;
+}
+
+
+.insturctions-logo img{
+  max-width: 350px;
+}
+
+
 .instructions-page__options{
-  margin: 5em auto;
+  margin: 0 auto 5em;
+  font-size: 1.2em;
 }
 
 .instructions-page__option{
@@ -36,6 +78,16 @@
   margin: 2em auto;
   display: flex;
   align-items: center;
+}
+
+.instructions-page__option h2{
+  font-size: 1.5em;
+}
+
+
+.instructions-page__step label{
+  font-size: 1.2em;
+  display: block;
 }
 
 .instructions-page__step--num{
@@ -50,6 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 8px;
 }
 
 .instructions-page__option--icon{
@@ -66,7 +119,7 @@
 }
 
 .instructions-page__option--icon img{
-    width: 100%;
+    width: 60%;
 }
 
 .instructions-page__option--txt{
@@ -141,6 +194,19 @@
 .instructions-page .blue a{
     color: #fff;
 }
+
+
+.instructions-page__tab--title{
+  text-align: center;
+  margin: 0;
+  padding: 2em 0 3em;
+}
+
+.instructions-page__tab--text{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .instructions-page__tab--content{
   display:flex;
 }
@@ -150,14 +216,13 @@
 }
 
 .instructions-page__step:nth-child(odd){
-  text-align:right;
-  padding-right: 2em;
+    padding-right: 2em;
     justify-content: flex-end;
 }
 
 .instructions-page__step:nth-child(even){
     justify-content: flex-start;
-  padding-left: 2em;
+    padding-left: 2em;
 }
 
 .instructions-page__step{
